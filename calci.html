@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calci.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="calci.html"><img src="Claci_logo.png" alt="Calculator Logo"></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" name="result" id="result" placeholder="0">
+            <table>
+                <tr>
+                    <td><button type="button" value="sin" onclick="sin()">sin</button></td>
+                    <td><button type="button" value="cos" onclick="cos()">cos</button></td>
+                    <td><button type="button" value="tan" onclick="tan()">tan</button></td>
+                    <td><button type="button" onclick="clearResult()" class="clear">C</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="square" onclick="square()">x <sup>2</sup></button></td>
+                    <td><button type="button" value="cubed" onclick="cubed()">x <sup>3</sup></button></td>
+                    <td><button type="button" value="sqrt" onclick="sqrt()">√</button></td>
+                    <td><button type="button" value="sqrt3" onclick="sqrt3()">∛</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="1" onclick="appendToResult('1')">1</button></td>
+                    <td><button type="button" value="2" onclick="appendToResult('2')">2</button></td>
+                    <td><button type="button" value="3" onclick="appendToResult('3')">3</button></td>
+                    <td><button type="button" value="BACKSPC" onclick="backspace()">←</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="4" onclick="appendToResult('4')">4</button></td>
+                    <td><button type="button" value="5" onclick="appendToResult('5')">5</button></td>
+                    <td><button type="button" value="6" onclick="appendToResult('6')">6</button></td>
+                    <td><button type="button" value="-" onclick="appendToResult('-')"> - </button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="7" onclick="appendToResult('7')">7</button></td>
+                    <td><button type="button" value="8" onclick="appendToResult('8')">8</button></td>
+                    <td><button type="button" value="9" onclick="appendToResult('9')">9</button></td>
+                    <td><button type="button" value="/" onclick="appendToResult('/')"> / </button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="." onclick="appendToResult('.')">.</button></td>
+                    <td><button type="button" value="0" onclick="appendToResult('0')">0</button></td>
+                    <td><button type="button" value="*" onclick="appendToResult('*')">*</button></td>
+                    <td><button type="button" value="%" onclick="appendToResult('%')"> % </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" value="=" onclick="calculate()" class="equal">=</button></td>
+                    <td><button type="button" value="+" onclick="appendToResult('+')">+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
